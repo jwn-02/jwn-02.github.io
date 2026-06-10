@@ -1,1 +1,119 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jungwoon Kim</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #222;
+    }
+    h1, h2 {
+      color: #111;
+    }
+    .section {
+      margin-top: 40px;
+    }
+    .project {
+      margin-bottom: 28px;
+    }
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .tag {
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Jungwoon Kim</h1>
+  <p>
+    Undergraduate student in Electrical Engineering at KAIST<br />
+    Interested in audio signal processing, machine learning, and multimodal AI.
+  </p>
+
+  <p>
+    Email: <a href="mailto:k2y2kim7@gmail.com">k2y2kim7@gmail.com</a><br />
+    GitHub: <a href="https://github.com/k2y2kim7">@k2y2kim7</a><br />
+    CV: <a href="./assets/CV_Jungwoon_Kim.pdf">Download CV</a>
+  </p>
+
+  <div class="section">
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Audio signal processing</li>
+      <li>Music information retrieval</li>
+      <li>Machine learning for audio and music data</li>
+      <li>Multimodal representation learning</li>
+      <li>Generative models for audio and symbolic music</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Speech Separation</h3>
+      <p class="tag">Audio signal processing · Source separation · Deep learning</p>
+      <p>
+        Studied deep learning-based speech separation models such as Conv-TasNet and DPT-TasNet.
+        This project focused on separating mixed speech signals into individual sources and understanding
+        neural architectures for time-domain audio processing.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Multimodal Retrieval / Vision RAG</h3>
+      <p class="tag">Multimodal AI · Retrieval · Vision-language models · RAG</p>
+      <p>
+        Built and evaluated a multimodal retrieval pipeline using text and visual embeddings.
+        The project involved benchmark construction, embedding model comparison, hybrid retrieval,
+        and Recall@K-based evaluation.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Text-to-Video Retrieval</h3>
+      <p class="tag">Video retrieval · CLIP · Temporal modeling · Representation alignment</p>
+      <p>
+        Implemented a text-to-video retrieval pipeline based on CLIP frame embeddings and temporal aggregation.
+        Explored methods for improving query-video alignment using temporal modeling and multimodal features.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Relevant Coursework</h2>
+    <ul>
+      <li>Programming</li>
+      <li>Digital Signal Processing</li>
+      <li>Signals and Systems</li>
+      <li>Machine Learning</li>
+      <li>Probability and Statistics</li>
+      <li>Linear Algebra</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python, PyTorch, NumPy, pandas, Git</li>
+      <li>Machine learning, deep learning, representation learning</li>
+      <li>Audio preprocessing, spectrograms, speech/audio modeling</li>
+      <li>Retrieval systems, embedding models, evaluation metrics</li>
+    </ul>
+  </div>
+
+</body>
+</html>
