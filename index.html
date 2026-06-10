@@ -9,6 +9,7 @@
       --text: #202124;
       --muted: #5f6368;
       --line: #e5e7eb;
+      --surface: #f8fafc;
       --accent: #0b57d0;
     }
 
@@ -73,6 +74,32 @@
       padding-right: 8px;
     }
 
+    .profile-photo {
+      display: grid;
+      place-items: center;
+      width: 120px;
+      aspect-ratio: 1;
+      margin-bottom: 18px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: var(--surface);
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-align: center;
+    }
+
+    .profile-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-photo img:not([src]),
+    .profile-photo img[src=""] {
+      display: none;
+    }
+
     .intro {
       color: #34373b;
     }
@@ -129,6 +156,10 @@
         margin-bottom: 40px;
       }
 
+      .profile-photo {
+        width: 104px;
+      }
+
       h1 {
         font-size: 1.9rem;
       }
@@ -139,6 +170,11 @@
 
 <main class="layout">
   <aside class="profile" aria-label="Profile">
+    <div class="profile-photo">
+      <img src="./assets/profile.jpg" alt="Portrait of Jeongwoon Kim" onload="this.nextElementSibling.remove()" onerror="this.remove()" />
+      <span>Profile photo</span>
+    </div>
+
     <h1>Jeongwoon Kim</h1>
     <p class="intro">
       Undergraduate student in Electrical Engineering at KAIST<br />
@@ -160,7 +196,7 @@
   <p>
     <strong>KAIST, Korea</strong><br>
     B.S. in Electrical Engineering<br>
-    GPA: 3.61 / 4.3 &nbsp; | &nbsp; Major GPA: 3.79 / 4.3<br>
+    GPA: 3.61/4.3 &nbsp; | &nbsp; Major GPA: 3.79/4.3<br>
     TOEIC: 830
   </p>
 </div>
@@ -212,7 +248,7 @@
       The project used VLM embeddings for visual document retrieval and included the construction of a domain-knowledge-based benchmark for evaluation.
     </p>
     <p>
-      <a href="./assets/visual_rag.pdf" target="_blank">Project Report</a>
+      <a href="./assets/visual_rag.pdf" target="_blank">Project PPT</a>
     </p>
     <ul>
       <li>Developed retrieval pipelines using text and visual embeddings.</li>
@@ -229,7 +265,7 @@
       The project explored query-aware fusion mechanisms to improve retrieval performance by adaptively combining multi-modal representations.
     </p>
     <p>
-      <a href="./assets/router_t2vr.pdf" target="_blank">Project Report</a>
+      <a href="./assets/router_t2vr.pdf" target="_blank">Project PPT</a>
     </p>
     <ul>
       <li>Built a CLIP-based text-to-video retrieval baseline.</li>
@@ -251,12 +287,12 @@
       <a href="https://www.youtube.com/watch?v=FL7b51-JLHE" target="_blank">Link</a>
     </li>
     <li>
-      Explored digital music production using Studio One and FL Studio, gaining basic experience
-      with MIDI-based composition, virtual instruments, and arrangement workflows.
+      Explored digital music mixing using Studio One, gained basic experience
+      with MIDI-based composition, arrangement workflows.
     </li>
     <li>
-      Created and edited sheet music using MuseScore in middle school, gaining hands-on experience with symbolic
-      music representation and score notation.
+      Created and edited sheet music using MuseScore in middle school orchestra, gaining 
+      hands-on experience with symbolic music representation and score notation.
     </li>
   </ul>
 </div>
