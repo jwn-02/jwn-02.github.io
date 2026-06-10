@@ -74,12 +74,18 @@
       padding-right: 8px;
     }
 
+    .profile-photos {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
     .profile-photo {
       display: grid;
       place-items: center;
-      width: 120px;
+      width: 88px;
       aspect-ratio: 1;
-      margin-bottom: 18px;
       overflow: hidden;
       border: 1px solid var(--line);
       border-radius: 50%;
@@ -157,7 +163,7 @@
       }
 
       .profile-photo {
-        width: 104px;
+        width: 78px;
       }
 
       h1 {
@@ -170,9 +176,15 @@
 
 <main class="layout">
   <aside class="profile" aria-label="Profile">
-    <div class="profile-photo">
-      <img src="./assets/profile.jpg" alt="Portrait of Jeongwoon Kim" onload="this.nextElementSibling.remove()" onerror="this.remove()" />
-      <span>Profile photo</span>
+    <div class="profile-photos">
+      <div class="profile-photo">
+        <img src="./assets/profileimage.jpg" alt="Portrait of Jeongwoon Kim" onload="this.nextElementSibling.remove()" onerror="this.remove()" />
+        <span>Photo 1</span>
+      </div>
+      <div class="profile-photo">
+        <img src="./assets/profileimage2.jpg" alt="Second portrait of Jeongwoon Kim" onload="this.nextElementSibling.remove()" onerror="this.remove()" />
+        <span>Photo 2</span>
+      </div>
     </div>
 
     <h1>Jeongwoon Kim</h1>
