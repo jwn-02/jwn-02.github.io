@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jungwoon Kim</title>
+  <title>Jeongwoon Kim</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -37,83 +37,117 @@
 </head>
 <body>
 
-  <h1>Jungwoon Kim</h1>
+  <h1>Jeongwoon Kim</h1>
   <p>
     Undergraduate student in Electrical Engineering at KAIST<br />
-    Interested in audio signal processing, machine learning, and multimodal AI.
+    Interested in Multimodal AI, Audio signal processing, machine learning
   </p>
 
   <p>
-    Email: <a href="mailto:k2y2kim7@gmail.com">k2y2kim7@gmail.com</a><br />
-    GitHub: <a href="https://github.com/k2y2kim7">@k2y2kim7</a><br />
-    CV: <a href="./assets/CV_Jungwoon_Kim.pdf">Download CV</a>
+    Email: <a href="mailto:jwn02@kaist.ac.kr">jwn02@kaist.ac.kr/a><br />
+    GitHub: <a href="https://github.com/jwn-02">@jwn-02</a><br />
+    CV: <a href="./assets/CV_Jeongwoon_Kim.pdf">CV</a>
   </p>
 
-  <div class="section">
-    <h2>Research Interests</h2>
+ ```html
+<div class="section">
+  <h2>Education</h2>
+
+  <p>
+    <strong>KAIST, Korea</strong><br>
+    B.S. in Electrical Engineering<br>
+    GPA: 3.61 / 4.3 &nbsp; | &nbsp; Major GPA: 3.79 / 4.3<br>
+    TOEIC: 830
+  </p>
+</div>
+
+<div class="section">
+  <h2>Research Experience</h2>
+
+  <div class="project">
+    <h3>Research Student, Smart Sound Lab, KAIST</h3>
+    <p class="tag">Jul. 2022 – Aug. 2022 · Speech Separation · Audio Signal Processing</p>
+    <p>
+      Studied AI-based speech separation models and explored deep learning approaches for separating mixed speech signals.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Research Student, IVY Lab, KAIST</h3>
+    <p class="tag">Jul. 2025 – Aug. 2025 · Multi-modal LLM · AI Agents</p>
+    <p>
+      Studied multi-modal large language models and AI agent frameworks, focusing on how language models can interact with external tools and multi-modal inputs.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Intern, S/W Development Team, Samsung Electronics</h3>
+    <p class="tag">Sep. 2025 – Feb. 2026 · Multi-modal RAG · Domain LLM · Vision-Language Retrieval</p>
+    <p>
+      Developed a multi-modal RAG system for a domain-specific LLM by leveraging vision-language embeddings and retrieval-based document understanding.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Research Student, MM Lab, KAIST</h3>
+    <p class="tag">Mar. 2026 – Jun. 2026 · Text-to-Video Retrieval · Multi-modal Representation Learning</p>
+    <p>
+      Worked on query-aware gate residual fusion for text-to-video retrieval, focusing on improving alignment between textual queries and video representations.
+    </p>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Selected Projects</h2>
+
+  <div class="project">
+    <h3>Multi-modal RAG for Domain MLLM</h3>
+    <p class="tag">Samsung Electronics · Sep. 2025 – Feb. 2026</p>
+    <p>
+      Built a multi-modal retrieval-augmented generation pipeline for domain-specific documents.
+      The project used VLM embeddings for visual document retrieval and included the construction of a domain-knowledge-based benchmark for evaluation.
+    </p>
     <ul>
-      <li>Audio signal processing</li>
-      <li>Music information retrieval</li>
-      <li>Machine learning for audio and music data</li>
-      <li>Multimodal representation learning</li>
-      <li>Generative models for audio and symbolic music</li>
+      <li>Developed retrieval pipelines using text and visual embeddings.</li>
+      <li>Compared embedding models for text-heavy and visual-heavy document queries.</li>
+      <li>Built and evaluated a benchmark for domain-specific QA and retrieval.</li>
     </ul>
   </div>
 
-  <div class="section">
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>Speech Separation</h3>
-      <p class="tag">Audio signal processing · Source separation · Deep learning</p>
-      <p>
-        Studied deep learning-based speech separation models such as Conv-TasNet and DPT-TasNet.
-        This project focused on separating mixed speech signals into individual sources and understanding
-        neural architectures for time-domain audio processing.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Multimodal Retrieval / Vision RAG</h3>
-      <p class="tag">Multimodal AI · Retrieval · Vision-language models · RAG</p>
-      <p>
-        Built and evaluated a multimodal retrieval pipeline using text and visual embeddings.
-        The project involved benchmark construction, embedding model comparison, hybrid retrieval,
-        and Recall@K-based evaluation.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Text-to-Video Retrieval</h3>
-      <p class="tag">Video retrieval · CLIP · Temporal modeling · Representation alignment</p>
-      <p>
-        Implemented a text-to-video retrieval pipeline based on CLIP frame embeddings and temporal aggregation.
-        Explored methods for improving query-video alignment using temporal modeling and multimodal features.
-      </p>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Relevant Coursework</h2>
+  <div class="project">
+    <h3>Query-Aware Gate Residual Fusion in Text-to-Video Retrieval</h3>
+    <p class="tag">KAIST · Mar. 2026 – Jun. 2026</p>
+    <p>
+      Implemented a text-to-video retrieval pipeline based on video and text embeddings.
+      The project explored query-aware fusion mechanisms to improve retrieval performance by adaptively combining multi-modal representations.
+    </p>
     <ul>
-      <li>Programming</li>
-      <li>Digital Signal Processing</li>
-      <li>Signals and Systems</li>
-      <li>Machine Learning</li>
-      <li>Probability and Statistics</li>
-      <li>Linear Algebra</li>
+      <li>Built a CLIP-based text-to-video retrieval baseline.</li>
+      <li>Explored temporal modeling and residual fusion strategies.</li>
+      <li>Evaluated retrieval performance using Recall@K-based metrics.</li>
     </ul>
   </div>
+</div>
 
-  <div class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python, PyTorch, NumPy, pandas, Git</li>
-      <li>Machine learning, deep learning, representation learning</li>
-      <li>Audio preprocessing, spectrograms, speech/audio modeling</li>
-      <li>Retrieval systems, embedding models, evaluation metrics</li>
-    </ul>
-  </div>
+<div class="section">
+  <h2>Music Experience</h2>
 
-</body>
-</html>
+  <ul>
+    <li>
+      Studied piano seriously since childhood and received awards in piano competitions.
+    </li>
+    <li>
+      Participated in university-stage performances as a pianist.
+      <a href="https://www.youtube.com/watch?v=FL7b51-JLHE" target="_blank">View performance</a>
+    </li>
+    <li>
+      Explored digital music production using Studio One and FL Studio, gaining basic experience
+      with MIDI-based composition, virtual instruments, and arrangement workflows.
+    </li>
+    <li>
+      Created and edited sheet music using MuseScore, gaining hands-on experience with symbolic
+      music representation and score notation.
+    </li>
+  </ul>
+</div>
+```
